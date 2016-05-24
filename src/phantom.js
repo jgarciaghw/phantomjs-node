@@ -12,7 +12,7 @@ import EventEmitter from 'events';
 const logger = new winston.Logger({
     transports: [
         new winston.transports.Console({
-            level: process.env.DEBUG === 'true' ? 'debug' : 'info',
+            level: 'error',
             colorize: true
         })
     ]
